@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Box-2</title>
+    <style>
+        h1 {
+            display: inline;
+            padding: 0px 10px;
+            margin: 0px 10px;
+            background-color: orange;
+        }
+
+        span {
+            display: block;
+            text-align: center;
+            padding: 50px 0px;
+            border: 10px solid tomato;
+            margin: 10px;
+            width: 300px;
+            background-color: linen;
+        }
+
+        div {
+            width: 300px;
+            height: 200px;
+            padding: 10px;
+            border: 5px solid khaki;
+            margin: 10px;
+            margin-right: 50px;
+            background-color: darkolivegreen;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav>a {
+            display: inline-block;
+            background-image: linear-gradient(tomato, cyan);
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px;
+            text-decoration: none;
+        }
+
+        nav>a:hover {
+            background-image: linear-gradient(orange, blueviolet);
+            font-weight: bold;
+            color: white;
+            transform: scale(0.50) rotate(-720deg);
+            transition: transform 2s ease-in 0.2s;
+        }
+
+        input:focus {
+            color: red;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        li {
+            line-height: 1.8;
+        }
+
+        li:nth-child(odd) {
+            color: blue;
+            background-color: aqua;
+            font-weight: bold;
+            padding-left: 10px;
+            width: 100px;
+        }
+
+        li:nth-child(even) {
+            color: black;
+            background-color: chocolate;
+            font-weight: bold;
+            padding-left: 10px;
+            width: 100px;
+        }
+
+        h3::after {
+            content: ' Jhankar Mahbub';
+            color: orangered;
+            font-weight: bold;
+            font-size: 40px;
+        }
+
+        h4::before {
+            content: 'Mission 2022 ';
+            color: orangered;
+            font-weight: bold;
+            font-size: 40px;
+        }
+
+        .boy {
+            position: relative;
+            top: 75px;
+            z-index: 3;
+        }
+
+        .ring {
+            position: relative;
+            z-index: 2;
+        }
+
+        .water {
+            position: relative;
+            top: -75px;
+        }
+
+        .overflow {
+            width: 300px;
+            height: 100px;
+            text-align: justify;
+            padding: 20px;
+            border: 10px solid yellowgreen;
+            margin: 50px;
+            overflow-y: scroll;
+        }
+
+        .border-line {
+            margin: auto;
+            width: 150px;
+            height: 100px;
+            padding: 10px;
+            text-align: justify;
+            box-shadow: 10px 10px 15px gray;
+            border-radius: 5px;
+            border-left: 6px solid;
+            border-image: linear-gradient(tomato, orange);
+            border-image-slice: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Russia</h1>
+    <h1>Canada</h1>
+    <h1>India</h1>
+    <span>Singapore</span>
+    <span>Venezuela</span>
+    <span>Vatican City</span>
+    <section class="container">
+        <div>
+            <h2>Room-1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, at?</p>
+        </div>
+        <div>
+            <h2>Room-2</h2>
+            <p>Natus alias minima dolorum in ad! Amet veniam numquam aut.</p>
+        </div>
+        <div>
+            <h2>Room-3</h2>
+            <p>Tempora adipisci, a optio beatae ab vitae nostrum ullam impedit?</p>
+        </div>
+    </section>
+    <nav>
+        <a href="https://www.facebook.com/" target="_blank">Fcaebook</a>
+        <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+        <a href="https://www.google.com/" target="_blank">Google</a>
+    </nav>
+    <input type="text" placeholder="Enter your name">
+    <input type="password" placeholder="juel251#">
+    <br>
+    <br>
+    <a href="https://www.facebook.com/">Fcaebook</a>
+    <a href="https://www.oneplus.com/store">Unvisited Link</a>
+    <ol>
+        <li>Room-1</li>
+        <li>Room-2</li>
+        <li>Room-3</li>
+        <li>Room-4</li>
+        <li>Room-5</li>
+        <li>Room-6</li>
+        <li>Room-7</li>
+        <li>Room-8</li>
+        <li>Room-9</li>
+        <li>Room-10</li>
+        <li>Room-11</li>
+        <li>Room-12</li>
+        <li>Room-13</li>
+        <li>Room-14</li>
+        <li>Room-15</li>
+        <li>Room-16</li>
+        <li>Room-17</li>
+        <li>Room-18</li>
+        <li>Room-19</li>
+        <li>Room-20</li>
+        <li>Room-21</li>
+        <li>Room-22</li>
+        <li>Room-23</li>
+        <li>Room-24</li>
+        <li>Room-25</li>
+        <li>Room-26</li>
+        <li>Room-27</li>
+        <li>Room-28</li>
+        <li>Room-29</li>
+        <li>Room-30</li>
+    </ol>
+    <h3>Right now, I am learning web-development with</h3>
+    <h4>I want to be a professional web-developer to economic serve my family</h3>
+        <section class="swiming">
+            <figure><img class="boy" src="./images/boy.svg" alt=""></figure>
+            <figure class="ring"><img src="./images/ring.svg" alt=""></figure>
+            <figure><img class="water" src="./images/water.svg" alt=""></figure>
+            <p class="overflow">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non illum temporibus eveniet
+                maiores dolor incidunt neque accusantium doloremque est autem esse iure odit deserunt delectus quidem
+                beatae recusandae accusamus, quos libero suscipit ipsam dignissimos quis nisi? Ad, earum? Odit maiores
+                ab iure. Provident ratione doloribus at enim nostrum laudantium dolorem!</p>
+            <p class="overflow">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe natus minus
+                consequuntur, accusantium voluptatem dolores fuga aliquam. Consectetur, natus? Doloremque, eos facilis?
+                Nihil, incidunt voluptate! Similique officiis laborum in eligendi repudiandae voluptas quisquam placeat,
+                iste minima ea incidunt explicabo numquam. Est, iusto culpa non nostrum animi voluptatibus assumenda
+                omnis voluptatum.</p>
+            <p class="overflow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam architecto quibusdam
+                ducimus delectus! Quas sapiente reprehenderit ratione natus? Cumque fugit minus repudiandae nisi unde
+                sint, tempora amet sapiente? Culpa odit quae harum fugiat cupiditate id nobis quam ratione. Omnis id
+                repellat voluptates itaque consequatur sequi eveniet quo veniam explicabo quam!</p>
+            <p class="overflow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eos consequuntur eum
+                quos laborum voluptatum minima incidunt magni nostrum, tempora quam, hic asperiores nulla? Dolore maxime
+                ab similique obcaecati quod iste in porro voluptates cum minima, recusandae dicta deleniti repellendus?
+                Ipsa aspernatur placeat eligendi inventore fuga omnis neque, aliquid nisi?</p>
+        </section>
+        <section class="fixed-container">
+            <pre>
+                Seperate
+                paragraph tag is hidden &
+                overflow-y: scroll;
+            </pre>
+            <p class="overflow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam sapiente esse quisquam
+                officiis
+                similique omnis ab accusantium minima, mollitia, aperiam aliquid maiores quo culpa totam, nihil
+                inventore enim maxime quae necessitatibus commodi aliquam vitae ipsa quia in. Ullam quisquam quaerat
+                optio. Tempore perferendis quidem distinctio? Ullam ipsa veritatis itaque quibusdam beatae nihil harum
+                alias consectetur neque culpa rerum minima nam sunt obcaecati non, nisi iure possimus, error ratione
+                pariatur voluptates consequatur magni, dolorem ducimus. Ullam consectetur blanditiis voluptates repellat
+                laborum expedita ratione! Veniam asperiores quos inventore libero natus autem consequuntur laboriosam,
+                illo, sed neque architecto cumque, accusantium saepe? Voluptas, illum?</p>
+            <p class="overflow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste obcaecati ipsam expedita
+                quidem quis
+                ratione praesentium, suscipit exercitationem nam excepturi magni numquam at accusamus eaque. Excepturi
+                magnam expedita tempora facere, fugit quos quo cum incidunt quaerat explicabo ad tenetur perspiciatis ex
+                quibusdam obcaecati non sapiente ipsam nemo dolore at temporibus. Tenetur quaerat nostrum, minus odio
+                tempora aut repudiandae magni. Laborum saepe nesciunt impedit, in autem dignissimos nostrum fuga quis
+                delectus odio at rem culpa qui adipisci architecto fugit sapiente, asperiores eaque cum ullam omnis
+                necessitatibus. Ut tenetur, praesentium ipsum assumenda provident magnam! Laboriosam eaque dolorum
+                repudiandae magni quo a ipsum!</p>
+            <p class="overflow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempore assumenda rem hic
+                vero officiis non
+                facilis! Magnam rerum mollitia sunt ipsam fugit neque quos aut, nostrum quam officia corporis, similique
+                nam! Ipsa consectetur illum asperiores, praesentium laudantium quasi iste dolor, earum fuga quidem
+                dolorem saepe similique ipsum nostrum cumque ipsam ab vero. Molestias molestiae perferendis explicabo
+                voluptatibus. Pariatur qui aliquam sed corporis, amet recusandae, vero fugit molestiae sint inventore
+                doloremque! Assumenda mollitia pariatur voluptas minima ad earum eum saepe? Facilis labore corporis
+                ducimus. Atque neque quas, vel tempore eveniet adipisci in suscipit optio porro dolor harum autem.
+                Rerum, autem!</p>
+            <p class="overflow">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, placeat adipisci nam quas
+                explicabo
+                consequatur numquam a praesentium dolorum totam. Pariatur magnam fugit at et alias nostrum! Quidem iusto
+                nobis ab asperiores praesentium, doloribus neque soluta et! Error, dolorum ratione reiciendis fugiat
+                optio quaerat delectus eveniet odit quisquam culpa quos pariatur laborum excepturi odio sint ullam.
+                Sequi necessitatibus iusto impedit, suscipit sapiente ea vitae modi beatae aut quo, autem, deleniti hic!
+                Quod sunt sed, incidunt odio ex doloribus eius laboriosam, exercitationem dicta nihil quaerat
+                repudiandae obcaecati quisquam rem reprehenderit soluta nam eveniet? Molestias vitae pariatur ipsam
+                deleniti cupiditate hic maxime.</p>
+            <p class="overflow">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatibus quo explicabo
+                maxime ratione totam
+                sapiente, eos pariatur iusto maiores nam cumque cupiditate inventore sunt autem? Illo, earum itaque,
+                iste voluptatum sed odio quae quas accusamus autem quod voluptatibus vel. Fuga voluptatibus aut
+                deserunt, ipsam laborum iure aperiam, voluptate expedita delectus quam ratione ullam vero laboriosam
+                quaerat cum, incidunt dignissimos ab corporis quasi maxime impedit accusamus consequatur eius! Corrupti,
+                corporis vero. Eveniet beatae molestias laboriosam odio nisi itaque dicta. Ratione praesentium quod quas
+                dolore, enim expedita ipsam repudiandae ducimus ab nemo facilis laboriosam aliquam voluptas, distinctio
+                fugiat rem neque mollitia incidunt!</p>
+            <p class="overflow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ut esse? Eos, sit
+                soluta animi magni
+                iusto eum dolores unde aut amet illo labore perferendis ullam deleniti dolore voluptas harum illum omnis
+                molestias! Amet, iste! Facere, nemo non ut quaerat doloribus et iusto id temporibus adipisci deleniti
+                itaque aliquid consectetur culpa beatae, repellendus expedita fugit nesciunt consequuntur odit maxime
+                quis illum molestias eius impedit. Vitae dolorem ducimus dignissimos magnam perspiciatis, sit repellat,
+                veniam voluptates consequuntur sunt neque modi est quisquam? Libero amet officia dolore aliquam optio
+                neque, unde natus velit aspernatur ex voluptas nostrum fugiat tenetur delectus eos accusamus corrupti!
+            </p>
+
+        </section>
+        <p class="border-line">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, vero?</p>
+
+</body>
+
+</html>
