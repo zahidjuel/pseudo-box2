@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/nav.css">
+    <title>Input</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Index</a>
+                <ul class="dropdown">
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+                    <li><a href="https://www.instagram.com/?hl=en" target="_blank">Instagram</a></li>
+                    <li><a href="./admin/user.html" target="_blank">User</a></li>
+                </ul>
+            </li>
+            <li><a href="./input.html">Input</a>
+                <ul class="dropdown">
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+                    <li><a href="https://www.instagram.com/?hl=en" target="_blank">Instagram</a></li>
+                    <li><a href="./admin/user.html" target="_blank">User</a></li>
+                </ul>
+            </li>
+            <li><a href="./semantic.html">Semantic</a>
+                <ul class="dropdown">
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+                    <li><a href="https://www.instagram.com/?hl=en" target="_blank">Instagram</a></li>
+                    <li><a href="./admin/user.html" target="_blank">User</a></li>
+                </ul>
+            </li>
+            <li><a href="./table.html">Table</a>
+                <ul class="dropdown">
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+                    <li><a href="https://www.instagram.com/?hl=en" target="_blank">Instagram</a></li>
+                    <li><a href="./admin/user.html" target="_blank">User</a></li>
+                </ul>
+            </li>
+            <li><a href="./about.html">About Us</a>
+                <ul class="dropdown">
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+                    <li><a href="https://www.instagram.com/?hl=en" target="_blank">Instagram</a></li>
+                    <li><a href="./admin/user.html" target="_blank">User</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <h1>Explore input using html5</h1>
+    <form action="">
+        <label for="fname">First name:</label>
+        <input type="text" name="fname" id="fname" placeholder="Enter Your first name">
+        <label for="lname"> Last name:</label>
+        <input type="text" name="lname" id="lname" value="Juel" readonly><br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email">
+        <label for="cellno">Cellno:</label>
+        <input type="tel" name="cellno" id="cellno" autofocus><br><br>
+        <label for="pin">password</label>
+        <input type="password" name="Password" id="pin" maxlength="8">
+        <label for="birthdate">Birthdate:</label>
+        <input type="date" name="birthdate" id="birthdate" max="2022-02-15"> <br><br>
+        <fieldset style="width:50%">
+            <legend>Select your Pitha</legend>
+            <input type="radio" name="Pitha" id="vapa">
+            <label for="vapa">Vapa </label><br>
+            <input type="radio" name="Pitha" id="chitoy">
+            <label for="chitoy">Chitoy</label><br>
+            <input type="radio" name="Pitha" id="bokul">
+            <label for="bokul">Bokul</label><br>
+        </fieldset>
+        <br>
+        <fieldset style="width: 50%;">
+            <legend>Select your vorta</legend>
+            <input type="checkbox" name="Vorta" id="shutki">
+            <label for="shutki">Shutki</label><br>
+            <input type="checkbox" name="Vorta" id="begun">
+            <label for="begun">Begun</label><br>
+            <input type="checkbox" name="Vorta" id="alu">
+            <label for="alu">Alu</label><br>
+        </fieldset>
+        <br>
+        <label for="color">Color:</label>
+        <input type="color" name="fav_olor" id="color" value="#ff0000"><br><br>
+        <label for="instruction">Instruction:</label>
+        <textarea name="Instruction" id="instruction" cols="50" rows="10"
+            placeholder="Enter Instruction give eating Pitha....."></textarea>
+        <br>
+        <label for="dept">Choose the Department:</label>
+        <select name="dept" id="dept">
+            <optgroup label="Science faculty">
+                <option value="cse">Dept. of CSE</option>
+                <option value="eee">Dept. of EEE</option>
+                <option value="textile"> Dept. of Textile</option>
+            </optgroup>
+            <optgroup label="Hummanites faculty">
+                <option value="english">Dept. of English</option>
+                <option value="journalism">Dept. of Journalism</option>
+                <option value="law">Dept. of Law</option>
+            </optgroup>
+
+        </select><br><br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+        <input type="button" onclick="alert('hello World!')" value="Click me">
+    </form>
+
+
+</body>
+
+</html>

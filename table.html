@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/nav.css">
+    <title>Table</title>
+    <style>
+        .th1,
+        .td1 {
+            border: 1px solid;
+            padding: 10px;
+        }
+
+        .table1 {
+            border-collapse: collapse;
+            caption-side: bottom;
+            width: 50%;
+        }
+
+        .tr1:nth-child(even) {
+            background-color: aquamarine;
+        }
+
+        .tbody1>.tr1:nth-child(odd):hover {
+            background-color: lightgray;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 40%;
+        }
+
+        tr {
+            border-bottom: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            border-right: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        tr:hover {
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Index</a>
+                <ul class="dropdown">
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+                    <li><a href="https://www.instagram.com/?hl=en" target="_blank">Instagram</a></li>
+                    <li><a href="./admin/user.html" target="_blank">User</a></li>
+                </ul>
+            </li>
+            <li><a href="./input.html">Input</a>
+                <ul class="dropdown">
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+                    <li><a href="https://www.instagram.com/?hl=en" target="_blank">Instagram</a></li>
+                    <li><a href="./admin/user.html" target="_blank">User</a></li>
+                </ul>
+            </li>
+            <li><a href="./semantic.html">Semantic</a>
+                <ul class="dropdown">
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+                    <li><a href="https://www.instagram.com/?hl=en" target="_blank">Instagram</a></li>
+                    <li><a href="./admin/user.html" target="_blank">User</a></li>
+                </ul>
+            </li>
+            <li><a href="./table.html">Table</a>
+                <ul class="dropdown">
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+                    <li><a href="https://www.instagram.com/?hl=en" target="_blank">Instagram</a></li>
+                    <li><a href="./admin/user.html" target="_blank">User</a></li>
+                </ul>
+            </li>
+            <li><a href="./about.html">About Us</a>
+                <ul class="dropdown">
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+                    <li><a href="https://www.instagram.com/?hl=en" target="_blank">Instagram</a></li>
+                    <li><a href="./admin/user.html" target="_blank">User</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <h1>Explore Table </h1>
+    <table class="table1">
+        <caption style="margin-top: 20px;">Table-1: Practice day_1</caption>
+        <thead>
+            <tr class="tr1">
+                <th class="th1">N0.</th>
+                <th class="th1">Name</th>
+                <th class="th1">Id</th>
+                <th class="th1">Department</th>
+                <th class="th1">university</th>
+            </tr>
+        </thead>
+        <tbody class="tbody1">
+            <tr class="tr1">
+                <td class="td1">01</td>
+                <td class="td1">Md Zahidul Islam</td>
+                <td class="td1">201902066</td>
+                <td class="td1">CSE</td>
+                <td class="td1">GUB</td>
+            </tr>
+            <tr class="tr1">
+                <td class="td1">02</td>
+                <td class="td1">Md Uadud Hasan</td>
+                <td class="td1">201902050</td>
+                <td class="td1">CSE</td>
+                <td class="td1">GUB</td>
+            </tr>
+            <tr class="tr1">
+                <td class="td1">03</td>
+                <td class="td1">Md Rahian</td>
+                <td class="td1">34523456</td>
+                <td class="td1">BBA</td>
+                <td class="td1"> ADMGCC</td>
+            </tr>
+            <tr class="tr1">
+                <td class="td1">04</td>
+                <td class="td1">Md Sourouv Hossain</td>
+                <td class="td1">67554469</td>
+                <td class="td1">CSE</td>
+                <td class="td1">BSMRSTU</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr class="tr1">
+                <th class="th1">Best Student</th>
+                <td class="td1">Zahidul</td>
+                <td class="td1">$3000 </td>
+                <td class="td1">Freelancer</td>
+                <td class="td1">Upwork</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <table>
+        <caption style="margin-bottom: 20px;">Table-2: Practice day_1</caption>
+        <colgroup>
+            <col span="2" style="background-color: antiquewhite;">
+            <col span="2" style="background-color: orange">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>team</th>
+                <th>core</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01</td>
+                <td>Mustafir Rahman</td>
+                <td>Delhi Capitals</td>
+                <td>2 core</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>Ishan Kishan</td>
+                <td>Mumbai Indians</td>
+                <td>15 core</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>Sheryas Iyear</td>
+                <td>Kolkata knight riders</td>
+                <td>9 core</td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>Hasaranga</td>
+                <td>Chennai super kings</td>
+                <td>10 core</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

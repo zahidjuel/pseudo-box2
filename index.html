@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/nav.css">
     <title>Pseudo Box-2</title>
     <style>
         h1 {
@@ -60,15 +61,15 @@
             color: red;
         }
 
-        a:visited {
+        .link_button:visited {
             color: red;
         }
 
-        li {
+        ol>li {
             line-height: 1.8;
         }
 
-        li:nth-child(odd) {
+        ol>li:nth-child(odd) {
             color: blue;
             background-color: aqua;
             font-weight: bold;
@@ -76,7 +77,7 @@
             width: 100px;
         }
 
-        li:nth-child(even) {
+        ol>li:nth-child(even) {
             color: black;
             background-color: chocolate;
             font-weight: bold;
@@ -140,6 +141,55 @@
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Index</a>
+                <ul class="dropdown">
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+                    <li><a href="https://www.instagram.com/?hl=en" target="_blank">Instagram</a></li>
+                    <li><a href="./admin/user.html" target="_blank">User</a></li>
+                </ul>
+            </li>
+            <li><a href="./input.html">Input</a>
+                <ul class="dropdown">
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+                    <li><a href="https://www.instagram.com/?hl=en" target="_blank">Instagram</a></li>
+                    <li><a href="./admin/user.html" target="_blank">User</a></li>
+                </ul>
+            </li>
+            <li><a href="./semantic.html">Semantic</a>
+                <ul class="dropdown">
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+                    <li><a href="https://www.instagram.com/?hl=en" target="_blank">Instagram</a></li>
+                    <li><a href="./admin/user.html" target="_blank">User</a></li>
+                </ul>
+            </li>
+            <li><a href="./table.html">Table</a>
+                <ul class="dropdown">
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+                    <li><a href="https://www.instagram.com/?hl=en" target="_blank">Instagram</a></li>
+                    <li><a href="./admin/user.html" target="_blank">User</a></li>
+                </ul>
+            </li>
+            <li><a href="./about.html">About Us</a>
+                <ul class="dropdown">
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+                    <li><a href="https://www.instagram.com/?hl=en" target="_blank">Instagram</a></li>
+                    <li><a href="./admin/user.html" target="_blank">User</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
     <h1>Russia</h1>
     <h1>Canada</h1>
     <h1>India</h1>
@@ -169,8 +219,10 @@
     <input type="password" placeholder="juel251#">
     <br>
     <br>
-    <a href="https://www.facebook.com/">Fcaebook</a>
-    <a href="https://www.oneplus.com/store">Unvisited Link</a>
+    <nav>
+        <a class="link_button" href="https://www.facebook.com/">Fcaebook</a>
+        <a class="link_button" href="https://www.oneplus.com/store">Unvisited Link</a>
+    </nav>
     <ol>
         <li>Room-1</li>
         <li>Room-2</li>
@@ -291,6 +343,16 @@
 
         </section>
         <p class="border-line">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, vero?</p>
+        <abbr title="World Health Organization">WHO</abbr>
+        <details>
+            <summary>Epcot center</summary>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos at nostrum, delectus ipsum voluptate
+                cupiditate nisi illum similique sint aperiam deserunt laudantium numquam earum tenetur? Rerum similique,
+                obcaecati consequatur repudiandae reprehenderit eveniet laboriosam ratione. Commodi sint accusantium
+                facilis magnam quaerat nobis ipsa impedit recusandae quis reprehenderit expedita quia, repudiandae
+                reiciendis.
+            </p>
+        </details>
 
 </body>
 
